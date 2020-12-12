@@ -138,7 +138,6 @@ func TestGetBudgetReturnsCorrectBudget(t *testing.T) {
 	}
 
 	februarybudget := GetBudget(time.February)
-
 	if februarybudget == nil || februarybudget.Max != 1500.00 {
 		t.Error("Did not get correct budget", februarybudget)
 	}
